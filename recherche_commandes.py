@@ -8,7 +8,7 @@ sheet_name = "Feuil1"  # À remplacer par le nom de la feuille pertinente
 
 df = pd.read_excel(file_path, sheet_name=sheet_name)
 
-st.title("Recherche d'articles en magasin")
+st.title("Recherche dans historique commandes")
 
 # Choix de la colonne pour la recherche
 column = st.selectbox("Choisissez la colonne pour la recherche :", df.columns)
@@ -23,3 +23,4 @@ if search_term:
 else:
 
     st.write("Veuillez entrer un terme pour lancer la recherche.")
+
